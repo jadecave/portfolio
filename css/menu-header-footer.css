@@ -12,7 +12,7 @@ body {
     background-color: rgb(17, 14, 14);
 }
 
-/* FONT OPTIONS */
+/* FONT OPTIONS to refer to*/
 
 /* 
 font-family: 'Audiowide', cursive;
@@ -38,10 +38,10 @@ font-family: 'Tourney', cursive;
   } */
 
 /* ------------------------------------------------------------------------ */
-/* LANDING PAGE BEHAVIOUR has fixed hero-banner */
-/* NAVIGATION */
 
-/* Use checkbox hack hamburger menu on mobile screen*/
+
+
+/* NAVIGATION for all pages */
 
 .nav-container {
     display: flex;
@@ -165,9 +165,8 @@ a:active {
     color: rgb(14, 154, 209);
 }
 
-/* HEADER */
 
-/* Make Hero Banner sticky on other pages */
+/* HEADER HERO BANNER > landing page is fixed */
 
 .hero-banner {
     position: fixed;
@@ -288,11 +287,11 @@ a:active {
     }
 }
 
-/* MENU PAGES have sticky hero banner */
+
+/* HEADER HERO BANNER > menu pages are sticky*/
 
 .hero-banner-pages {
     position: sticky;
-
     z-index: 95;
     margin: 0 auto;
     animation-name: hero-bouncer;
@@ -353,6 +352,9 @@ a:active {
 
 }
 
+
+/* FOOTER for all pages */
+
 footer {
     position: fixed;
     bottom: 0;
@@ -370,6 +372,4 @@ footer {
     font-size: 1.2rem;
     font-family: "Campton-LightDEMO";
     padding: 1rem 0 1rem 2rem;
-
-
 }

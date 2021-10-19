@@ -55,17 +55,16 @@
 }
 
 .skillset {
-    list-style-type: none;
-  
-    
+    list-style-type: none;  
 }
 
-/* CV  */
+/* CV */
 
 .cv-img {
     display: flex;
     position: relative;
-    max-width: 65%;
+    min-width: 65%;
+    max-width: 80%;
     margin: 0 auto;
     top:-7rem;
 
