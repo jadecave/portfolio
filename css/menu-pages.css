@@ -6,7 +6,7 @@
     justify-content: space-between;
     position: relative;
     margin: 0 auto;
-    padding: 3rem 3rem 5rem 3rem;
+    padding: 3rem 2rem 5rem 2rem;
     top: 10rem;
     min-width: 100vw;
     min-height: 100vh;
@@ -24,38 +24,41 @@
     position: absolute;
     opacity: 0.9;
     z-index: 90;
-    top: 8rem;
-    right: 18rem;
-    float: right;
-    width: 16rem;
+    top: 6.5rem;
+    right: 20rem;
+    max-width: 14.5rem;
     border-radius: 60%;
 }
 
 .bio {
     position: absolute;
-    top: 23rem;
-    right: 0rem;
-    clear: right;
+    top: 19.5rem;
+    right: 0;
     margin: 0 auto;
-    padding: 3rem 10rem 3rem 10rem;
-    max-width: 55vw;
+    padding: 3rem 12rem 3rem 10rem;
+    max-width: 60vw;
+    text-align:left;
     word-spacing: .2rem;
+    line-height: 2rem;
 }
 
 /* EXPERIENCE  */
 
-.experience {
-    text-align: left;
+.skillset {
     position: absolute;
     top: 10rem;
     left: 0;
     margin: 0 auto;
     padding: 3rem 10rem 3rem 10rem;
+    min-width: 45vw;
     max-width: 50vw;
+    text-align: start;
+    
 }
 
-.skillset {
+.skills{
     list-style-type: none;  
+    word-spacing: .2rem;
 }
 
 /* CV */
@@ -129,4 +132,4 @@ pre code {
     /* display: inline-block; */
     /* padding: 20px;
   } */
- */
+ 

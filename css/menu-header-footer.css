@@ -367,9 +367,9 @@ footer {
 }
 
 .footer-text {
-    color: rgb(255, 8, 103);
-    font-weight: 300;
-    font-size: 1.2rem;
+    color: rgba(255, 8, 103, 0.712);
+    font-weight: 100;
+    font-size: 1.1rem;
     font-family: "Campton-LightDEMO";
     padding: 1rem 0 1rem 2rem;
 }
