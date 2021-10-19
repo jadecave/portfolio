@@ -1,0 +1,375 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: rgb(17, 14, 14);
+}
+
+/* FONT OPTIONS */
+
+/* 
+font-family: 'Audiowide', cursive;
+font-family: 'Grechen Fuemen', cursive;
+font-family: 'Monoton', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Share Tech Mono', monospace;
+font-family: 'Tourney', cursive;
+*/
+
+/*  font-family: "Campton-BoldDEMO";
+    font-family: "Campton-LightDEMO"; */
+
+/* 
+    @font-face {
+    font-family: "Campton-LightDEMO";
+    src: url('webFonts/CamptonLightDEMO/font.woff2') format('woff2'), url('webFonts/CamptonLightDEMO/font.woff') format('woff');
+  }
+    @font-face {
+    font-family: "Campton-BoldDEMO";
+    src: url('webFonts/CamptonBoldDEMO/font.woff2') format('woff2'), url('webFonts/CamptonBoldDEMO/font.woff') format('woff');
+  } */
+
+/* ------------------------------------------------------------------------ */
+/* LANDING PAGE BEHAVIOUR has fixed hero-banner */
+/* NAVIGATION */
+
+/* Use checkbox hack hamburger menu on mobile screen*/
+
+.nav-container {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    padding: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-width: 100vw;
+    max-height: 7rem;
+    background-color: black;
+    z-index: 100;
+    font-weight: 700;
+    font-family: "Campton-LightDEMO";
+}
+
+.nav-menu {
+    display: flex;
+    position: fixed;
+}
+
+.nav-menu>li {
+    position: relative;
+    list-style-type: none;
+    color: rgb(14, 71, 241);
+    font-weight: 700;
+    font-family: "Campton-LightDEMO";
+    font-size: 2.2rem;
+    padding: 2rem;
+}
+
+.nav-icons {
+    margin: 0 0 0 4rem;
+}
+
+div>.nav-icon {
+    display: flex;
+    position: relative;
+    padding: 1.6rem 2rem 1.6rem 0;
+    font-size: 3.2rem;
+    list-style-type: none;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+li {
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+li:hover,
+li:focus-within {
+    cursor: pointer;
+    background-color: black;
+}
+
+li:focus-within a {
+    outline: none;
+}
+
+ul li ul {
+    background: rgb(122, 255, 34);
+    visibility: hidden;
+    opacity: 0;
+    min-width: 12rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+    z-index: 80;
+}
+
+ul li:hover>ul,
+ul li:focus-within>ul,
+ul li ul:hover,
+ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
+}
+
+.projects>.submenu>li:hover {
+    color: rgb(255, 8, 103);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: rgb(14, 71, 241);
+}
+
+a:visited {
+    color: rgb(14, 71, 241);
+}
+
+a:hover {
+    color: rgb(255, 8, 103);
+}
+
+a:active {
+    color: rgb(14, 154, 209);
+}
+
+/* HEADER */
+
+/* Make Hero Banner sticky on other pages */
+
+.hero-banner {
+    position: fixed;
+    z-index: 95;
+    margin: 0 auto;
+    animation-name: hero-bouncer;
+    animation-duration: 4s;
+    animation-direction: normal;
+    transition-duration: 4s;
+    transition: ease-in-out;
+    transform-origin: center;
+}
+
+@keyframes hero-bouncer {
+    0% {
+        transform: rotateX(360deg)
+    }
+
+    10% {
+        transform: rotateX(350deg)
+    }
+
+    20% {
+        transform: rotateX(360deg)
+    }
+
+    30% {
+        transform: rotateX(350deg)
+    }
+
+    40% {
+        transform: rotateX(360deg)
+    }
+
+    50% {
+        transform: rotateX(350deg)
+    }
+
+    60% {
+        transform: rotateX(360deg);
+    }
+
+    70% {
+        transform: rotateX(350deg)
+    }
+
+    80% {
+        transform: rotateX(360deg);
+    }
+
+    90% {
+        transform: rotateX(350deg)
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.hero-banner:before {
+    content: "";
+    display: flex;
+    position: absolute;
+    margin: 0 auto;
+    top: -4rem;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    min-width: 100vw;
+    height: 20rem;
+    z-index: 95;
+    background-image: linear-gradient(45deg, #255df5, rgb(160 0 163));
+    transform: skewY(-7deg);
+    font-family: "Campton-LightDEMO";
+}
+
+.name>h1 {
+    position: fixed;
+    z-index: 100;
+    top: 5rem;
+    left: 3rem;
+    color: rgb(122, 255, 34);
+    font-family: "Campton-BoldDEMO";
+    font-size: 3.5rem;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    z-index: 100;
+    min-width: 35rem;
+    min-height: 6rem;
+    padding: 0.5rem;
+}
+
+#profession {
+    position: fixed;
+    z-index: 100;
+    top: 11.5rem;
+    left: 11rem;
+    min-width: 60rem;
+    min-height: 4rem;
+    padding: 0.5rem;
+    color: rgb(255, 8, 103);
+    font-family: "Campton-LightDEMO";
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.3rem;
+    animation-name: profession-spinner;
+    animation-duration: 4s;
+    animation-direction: alternate-reverse;
+    transition-duration: 3s;
+    transition: ease-in-out;
+    transform-origin: center;
+}
+
+@keyframes profession-spinner {
+    100% {
+        transform: rotate(1080deg);
+    }
+}
+
+/* MENU PAGES have sticky hero banner */
+
+.hero-banner-pages {
+    position: sticky;
+
+    z-index: 95;
+    margin: 0 auto;
+    animation-name: hero-bouncer;
+    animation-duration: 4s;
+    animation-direction: normal;
+    transition-duration: 4s;
+    transition: ease-in-out;
+    transform-origin: center;
+}
+
+.hero-banner-pages:before {
+    content: "";
+    display: flex;
+    position: sticky;
+    margin: 0 auto;
+    top: -4rem;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    min-width: 100vw;
+    height: 16rem;
+    z-index: 95;
+    background-image: linear-gradient(45deg, #255df5, rgb(160 0 163));
+    transform: skewY(-7deg);
+    font-family: "Campton-LightDEMO";
+}
+
+.name-pages>h1 {
+    position: absolute;
+    z-index: 100;
+    top: 5rem;
+    left: 3rem;
+    color: rgb(122, 255, 34);
+    font-family: "Campton-BoldDEMO";
+    font-size: 3.5rem;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    z-index: 100;
+    min-width: 35rem;
+    min-height: 6rem;
+    padding: 0.5rem;
+}
+
+#profession-pages {
+    position: absolute;
+    z-index: 100;
+    top: 11.5rem;
+    left: 11rem;
+    min-width: 60rem;
+    min-height: 4rem;
+    padding: 0.5rem;
+    color: rgb(255, 8, 103);
+    font-family: "Campton-LightDEMO";
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.3rem;
+
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    margin: 0 auto;
+    padding: 1rem 0 1rem 0;
+    min-width: 100vw;
+    min-height: 8vh;
+    z-index: 95;
+    background-color: rgb(17, 14, 14);
+}
+
+.footer-text {
+    color: rgb(255, 8, 103);
+    font-weight: 300;
+    font-size: 1.2rem;
+    font-family: "Campton-LightDEMO";
+    padding: 1rem 0 1rem 2rem;
+
+
+}

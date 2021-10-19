@@ -1,0 +1,133 @@
+
+/* MAIN CONTENT */
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 0 auto;
+    padding: 3rem 3rem 5rem 3rem;
+    top: 10rem;
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: 90;
+    background-color: rgb(17, 14, 14);
+    color: rgb(228, 195, 195);
+    font-weight: 500;
+    font-size: 1.5rem;
+    font-family: "Campton-LightDEMO";
+}
+
+/* PROFILE INFO */
+
+.profile-photo {
+    position: absolute;
+    opacity: 0.9;
+    z-index: 90;
+    top: 8rem;
+    right: 18rem;
+    float: right;
+    width: 16rem;
+    border-radius: 60%;
+}
+
+.bio {
+    position: absolute;
+    top: 23rem;
+    right: 0rem;
+    clear: right;
+    margin: 0 auto;
+    padding: 3rem 10rem 3rem 10rem;
+    max-width: 55vw;
+    word-spacing: .2rem;
+}
+
+/* EXPERIENCE  */
+
+.experience {
+    text-align: left;
+    position: absolute;
+    top: 10rem;
+    left: 0;
+    margin: 0 auto;
+    padding: 3rem 10rem 3rem 10rem;
+    max-width: 50vw;
+}
+
+.skillset {
+    list-style-type: none;
+  
+    
+}
+
+/* CV  */
+
+.cv-img {
+    display: flex;
+    position: relative;
+    max-width: 65%;
+    margin: 0 auto;
+    top:-7rem;
+
+}
+/* MENU PAGES -----------------------------------------------------------------*/
+
+/* PROJECTS */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 20vw);
+    gap: .5rem;
+    margin: 0 auto;
+    position: absolute;
+    top: -3rem;
+
+}
+.project {
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    position: relative;
+    margin-bottom:2rem;
+}
+
+.project-image {
+    max-width: 90%;
+
+}
+
+.project-image-3 {
+    max-width: 90%;
+    margin-top: 5rem;
+}
+
+.table-img, .magazine-img, .blog-img  {
+    margin: 0 auto;
+    max-width: 70vw;
+    }
+
+#project-1, #project-2, 
+#project-3 {
+
+position: absolute;
+top: -5rem;
+padding: 2rem;
+}
+
+/* IMPRESSUM */
+
+
+
+/* 
+pre code {
+    
+    margin: 0 auto;
+    position: absolute;
+    background-color: #eee;
+    border: 1px solid #999;
+    overflow: scroll;
+    max-width: 20vw;
+    max-height: 40vh;
+    /* display: inline-block; */
+    /* padding: 20px;
+  } */
+ */

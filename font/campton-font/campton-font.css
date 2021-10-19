@@ -1,0 +1,34 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 4194290, 2021-10-14T09:03:44-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Campton-BoldDEMO by Rene Bieder
+ * URL: https://www.myfonts.com/fonts/rene-bieder/campton/bold-demo/
+ * 
+ * Webfont: Campton-LightDEMO by Rene Bieder
+ * URL: https://www.myfonts.com/fonts/rene-bieder/campton/light-demo/
+ * 
+ * 
+ * Webfonts copyright: Copyright © 2016 by René Bieder. All rights reserved.
+ * 
+ * © 2021 MyFonts Inc
+*/
+
+
+
+  
+@font-face {
+  font-family: "Campton-LightDEMO";
+  src: url('webFonts/CamptonLightDEMO/font.woff2') format('woff2'), url('webFonts/CamptonLightDEMO/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Campton-BoldDEMO";
+  src: url('webFonts/CamptonBoldDEMO/font.woff2') format('woff2'), url('webFonts/CamptonBoldDEMO/font.woff') format('woff');
+}
+
